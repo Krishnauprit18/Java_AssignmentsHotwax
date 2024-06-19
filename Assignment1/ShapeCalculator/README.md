@@ -1,4 +1,4 @@
-Assignment - 1
+# Assignment - 1
 
 Problem Statement - 2
 Write a program that accepts user inputs as follows and perform certain operations and displays the results on the console. The program must keep running and must not exit.
