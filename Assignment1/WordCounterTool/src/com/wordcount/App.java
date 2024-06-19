@@ -15,9 +15,9 @@ public class App{
     private static final String CONFIG_FILE_PATH = "src/resources/config.properties";
 
     /**
-     * Main method to count words form URLS and save the word counts.
-     * @param args          command-line arguments.
-     * @throws IOException  if an I/O error occurs
+     * Main method to count words from urls and save the word counts.
+     * @param args          command-line arguments
+     * @throws IOException  if an I/O exception occurs
      */
     public static void main(String[] args){
         Properties properties = new Properties();
