@@ -77,7 +77,7 @@ public class ConsoleMenu {
     }
 
     public void searchEmployees(){
-        System.out.println("Enter query to search: ");
+        System.out.println("Enter query to search (name, email address): ");
         String query = scanner.nextLine();
 
         List<Employee> results = employeeManager.searchEmployees(query);
