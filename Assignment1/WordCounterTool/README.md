@@ -14,6 +14,7 @@ Outputs:
 For each word on the given list, print the total number of occurrences across all the specified URLs. List the words sorted by the total number in descending order.
 
 Code Workflow:
+It has resources folder which has 3 files -> config.properties, urls.txt, words.txt.
 I). App.java
  - readUrls takes file path as argument from config.properties file and return them as list of strings.
  - readAllLines method read all the lines from the text file path and return list of strings of Urls, and converts the string to the path object.
