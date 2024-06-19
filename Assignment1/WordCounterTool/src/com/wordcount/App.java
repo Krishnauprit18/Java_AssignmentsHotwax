@@ -21,16 +21,15 @@ public class App{
      */
     public static void main(String[] args){
         Properties properties = new Properties();
-        try(FileInputStream fis = new FileInputStream(CONFIG_FILE_PATH)){
-            properties.load(fis);
+        try(FileInputStream fs = new FileInputStream(CONFIG_FILE_PATH)){
+            properties.load(fs);
         }
-        catch(IOException e) {
-            System.out.println("Error loading configuration file " + e.getMessage());
+        catch(IOException e){
+            System.out.println("Error loading configuration file" + e.getMessage());
         }
 
         String urlsFilePath = properties.getProperty("urlsFilePath");
         String wordsFilePath = properties.getProperty("wordsFilePath");
-
         try{
             List<String> urls = Input.readUrls(urlsFilePath);
             if (urls.isEmpty()){
@@ -65,6 +64,7 @@ public class App{
             }
 
             ResultAggregator.saveWordCounts(wordsFilePath, totalWordCounts);
+
         } catch (IOException e) {
             System.err.println("An unexpected error occurred: " + e.getMessage());
             e.printStackTrace();
