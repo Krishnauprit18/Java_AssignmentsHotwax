@@ -26,8 +26,19 @@ public class EmployeeManager {
     }
 
     public List<Employee> searchEmployees(String query){
+        String queryLowerCase = query.toLowerCase();
         return employees.stream()
-                .filter(e -> e.getName().contains(query) || e.getEmailAddress().contains(query))
+                .filter(e -> {
+                    String fullnameLowerCase = e.getName().toLowerCase();
+                    String[] parts = fullnameLowerCase.split("\\s+");
+
+                    for(String part : parts){
+                        if(part.startsWith(queryLowerCase)){
+                            return true;
+                        }
+                    }
+                    return e.getEmailAddress().toLowerCase().startsWith(queryLowerCase);
+                })
                 .collect(Collectors.toList());
     }
 
@@ -42,7 +53,7 @@ public class EmployeeManager {
             case "age":
                 comparator = Comparator.comparing(Employee::getAge);
                 break;
-            case "dateOfBirth":
+            case "dateofbirth":
                 comparator = Comparator.comparing(Employee::getDateOfBirth);
                 break;
             default:
