@@ -1,0 +1,5 @@
+Krishna Uprit,krishna@gmail.com,20,18/01/2004
+Aditya,aditya@gmail.com,21,08/01/2005
+Rohan sakalle,rohan@gmail.com,22,12/08/2003
+riya,riya@gmail.com,21,15/07/2004
+sanskriti,sans@gmail.com,22,17/12/2003
