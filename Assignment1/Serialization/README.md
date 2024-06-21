@@ -72,19 +72,20 @@ II). Deserialization Workflow
 
 Serialization successful. Data saved to output2.ser
 
+
 (E) Output after Deserializing output1.ser:-
 
 Deserialization.java:21: warning: [unchecked] unchecked cast
             List<Student> students = (List<Student>) ois.readObject();
                                                                    ^
-  required: List<Student>
+  required: List<Student>	
   found:    Object
 1 warning
 Deserialization successful. Data read from output2.ser
-Student{firstName='John', dateOfBirth='2000-01-01', address=Address{city='City1', state='State1', pinCode=123456, country='Country1'}}
-Student{firstName='Jane', dateOfBirth='2001-02-02', address=Address{city='City2', state='State2', pinCode=234567, country='Country2'}}
-Student{firstName='Jim', dateOfBirth='2002-03-03', address=Address{city='City3', state='State3', pinCode=345678, country='Country3'}}
-Student{firstName='Jill', dateOfBirth='2003-04-04', address=Address{city='City4', state='State4', pinCode=456789, country='Country4'}}
+Student{firstName='Krishna', dateOfBirth='2004-01-01', address=Address{city='Indore', state='MP', pinCode=123456, country='India'}}
+Student{firstName='Avijit', dateOfBirth='2005-01-02', address=Address{city='Bhopal', state='MP', pinCode=234567, country='India'}}
+Student{firstName='Aditya', dateOfBirth='2007-03-09', address=Address{city='Nagpur', state='Maharashtra', pinCode=345678, country='India'}}
+Student{firstName='Sarthak', dateOfBirth='2006-04-05', address=Address{city='Jaipur', state='Rajasthan', pinCode=456789, country='India'}}
 krishna@krishna-HP-Pavilion-Laptop-15-eg2xxx:~/Pictures/Java_AssignmentsHotwax/Assignment1/Serialization/src/main/java/com/example$ java Deserialization.java output1.ser
 Deserialization.java:21: warning: [unchecked] unchecked cast
             List<Student> students = (List<Student>) ois.readObject();
@@ -137,8 +138,7 @@ Handling old format data...
 Handling old format data...
 Handling old format data...
 Deserialization successful. Data read from output1.ser
-Student{firstName='John', dateOfBirth='2000-01-01', address=Address{city='City1', state='State1', pinCode=123456, country='Country1'}}
-Student{firstName='Jane', dateOfBirth='2001-02-02', address=Address{city='City2', state='State2', pinCode=234567, country='Country2'}}
-Student{firstName='Jim', dateOfBirth='2002-03-03', address=Address{city='City3', state='State3', pinCode=345678, country='Country3'}}
-Student{firstName='Jill', dateOfBirth='2003-04-04', address=Address{city='City4', state='State4', pinCode=456789, country='Country4'}}
-
+Student{firstName='Krishna', dateOfBirth='2004-01-01', address=Address{city='Indore', state='MP', pinCode=123456, country='India'}}
+Student{firstName='Avijit', dateOfBirth='2005-01-02', address=Address{city='Bhopal', state='MP', pinCode=234567, country='India'}}
+Student{firstName='Aditya', dateOfBirth='2007-03-09', address=Address{city='Nagpur', state='Maharashtra', pinCode=345678, country='India'}}
+Student{firstName='Sarthak', dateOfBirth='2006-04-05', address=Address{city='Jaipur', state='Rajasthan', pinCode=456789, country='India'}}
