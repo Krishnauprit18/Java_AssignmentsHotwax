@@ -8,6 +8,10 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+/**
+ * Created instances of the Student class
+ with different formats of dateOfBirth (String and Date) and other required fields.
+ */
 public class Student implements Serializable {
     private String firstName;
     private Date dateOfBirth; // Changed from String to Date
@@ -16,7 +20,7 @@ public class Student implements Serializable {
     private static final long OLD_SERIAL_VERSION_UID = 5461053639669178509L;
 
 
-        // Date format pattern
+    // Date format pattern
     private static final String DATE_FORMAT = "yyyy-MM-dd";
 
     // Constructor to initialize fields
