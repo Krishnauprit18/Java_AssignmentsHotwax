@@ -16,16 +16,16 @@ public class Serialization {
         String outputFileName = args[0];
 
         // Create Address objects
-        Address address1 = new Address("City1", "State1", 123456, "Country1");
-        Address address2 = new Address("City2", "State2", 234567, "Country2");
-        Address address3 = new Address("City3", "State3", 345678, "Country3");
-        Address address4 = new Address("City4", "State4", 456789, "Country4");
+        Address address1 = new Address("Indore", "MP", 123456, "India");
+        Address address2 = new Address("Bhopal", "MP", 234567, "India");
+        Address address3 = new Address("Nagpur", "Maharashtra", 345678, "India");
+        Address address4 = new Address("Jaipur", "Rajasthan", 456789, "India");
 
         // Create Student objects
-        Student student1 = new Student("John", "2000-01-01", address1);
-        Student student2 = new Student("Jane", "2001-02-02", address2);
-        Student student3 = new Student("Jim", "2002-03-03", address3);
-        Student student4 = new Student("Jill", "2003-04-04", address4);
+        Student student1 = new Student("Krishna", "2004-01-01", address1);
+        Student student2 = new Student("Avijit", "2005-01-02", address2);
+        Student student3 = new Student("Aditya", "2007-03-09", address3);
+        Student student4 = new Student("Sarthak", "2006-04-05", address4);
 
 
         // Create a list of Student objects
